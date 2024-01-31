@@ -21,7 +21,7 @@ pub struct Settings {
 impl Settings {
     pub fn init() -> Result<Self, ConfigError> {
         let config = Config::builder()
-            .add_source(config::File::with_name("config.yaml"))
+            .add_source(config::File::with_name("config.toml"))
             .add_source(config::Environment::with_prefix("ZANG"))
             .build()?;
 

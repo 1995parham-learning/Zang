@@ -1,0 +1,4 @@
+[server]
+listen-address = ":9090"
+[log]
+level = "debug"
